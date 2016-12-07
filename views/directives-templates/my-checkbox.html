@@ -1,0 +1,16 @@
+<div class="settingBox">
+	<div class="settingHeader">
+		<div class="headLbl" ng-click="showDiv = !showDiv">{{fieldName}} <span class="required" ng-show="isRequired">*</span></div>
+		<div class="headClose" ng-click="removeMe()">X</div>
+	</div>
+	<div class="settingBody" ng-show="showDiv">
+		<div class='box'><label class="lbl">Field Type: checkbox</label></div>
+		<div class='box'><label class="lbl">Field Title: </label> <input type="text" value="{{fieldName}}" ng-model="fieldName" class="inputTxt" maxlength="100" /></div>
+		<div class='box'><label class="lbl">Field Default Value: </label> <input type="text" value="" class="inputTxt" maxlength="100" /></div>
+		<div class='box'>
+			<label class="lbl">Required: </label>
+			<Label><input type="radio" value="1" name="req" ng-click="isRequired = true" />&nbsp; Yes</label>
+			<label><input type="radio" value="0" name="req" ng-click="isRequired = false" />&nbsp; No</label>
+		</div>
+	</div>
+</div>

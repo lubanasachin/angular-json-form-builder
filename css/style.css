@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Exo', sans-serif;
+    color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.appContainer {
+	width:98%;
+	border: 1px solid red;
+	min-height: 650px;
+	margin: 10px auto 0 auto;
+}
+
+.componentContainer {
+	float: left;
+	width: 99%;
+	min-height: 50px;
+	margin: 5px 0 0 5px;
+	border: 1px solid blue;
+}
+
+.paintContainer {
+	float: left;
+	width: 99%;
+	min-height: 520px;
+	border: 1px solid black;
+	margin: 5px 0 0 5px;
+	padding: 0;
+}
+
+.actionContainer {
+	float: left;
+	margin: 5px 0 0 5px;
+	width: 99%;
+	min-height: 50px;
+	border: 1px solid blue;
+}
+
+.component {
+	float: left;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin: 5px;
+	background: #666;
+	color: #fff;
+	width: 100px;
+	cursor: pointer;
+}
+
+.settingContainer {
+	float: left;
+	width: 60%;
+	border: 1px solid blue;
+	height: 520px;
+	overflow: auto;
+	margin: 0 5px 0 0;
+}
+
+.jsonContainer {
+	float: left;
+	width: 38%;
+	height: 520px;
+	overflow: auto;
+	border: 1px solid blue;
+}
+
+.previewContainer {
+	display: none;
+	float: left;
+	width: 38%;
+	height: 520px;
+	overflow: auto;
+	border: 1px solid blue;
+}
+
+.settingBox {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin: 10px 0 10px 10px;
+	width: 95%;
+	float: left;
+}
+
+.settingHeader {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: 100%;
+	background-color: #ccc;
+}
+
+.settingBody {
+	float: left;
+	min-height: 200px;
+	margin: 10px;
+	width: 95%;
+}
+
+.headLbl {
+	float: left;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+}
+
+.headClose {
+	float: right;
+	margin: 0 10px 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.settingBody .box {
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 0 5px 5px;
+	width: 95%;
+}
+
+.lbl {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 5px 10px 0 0;
+}
+
+.inputTxt {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width:150px;
+}
+
+.required {
+	color: red;
+	font-weight: bold;
+}
+
+.inputButton {
+	height: 35px;
+	line-height: 25px;
+	width: 150px;
+	margin: 5px 0 0 10px;
+}

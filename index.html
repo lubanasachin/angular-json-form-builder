@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Akkroo- Process Manager</title>
+	<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body ng-app="myProcessApp">
+	<div ng-controller="myProcessCtrl" class="appContainer">
+
+		<div class="componentContainer">
+			<div class="component" ng-click="addComponent(1)">Textfield</div>
+			<div class="component" ng-click="addComponent(2)">E-mail</div>
+			<div class="component" ng-click="addComponent(3)">Radio buttons</div>
+			<div class="component" ng-click="addComponent(4)">Checkbox</div>
+			<div class="component" ng-click="addComponent(5)">Label</div>
+			<div class="component" ng-click="addComponent(6)">Button</div>
+		</div>
+
+		<div class="paintContainer">
+			<div class="settingContainer" id="settingArea"></div>
+			<div class="previewContainer" id="previewArea"></div>
+			<div class="jsonContainer" id="jsonArea"></div>
+		</div>
+
+		<div class="actionContainer">
+			<button class='inputButton' ng-click='saveForm()'>Save</button>&nbsp;<button class='inputButton' ng-click='resetForm()'>Reset</button>
+		</div>
+
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/main.js"></script>
