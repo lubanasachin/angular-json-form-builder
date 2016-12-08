@@ -1,10 +1,13 @@
 <div class="settingBox">
 	<div class="settingHeader">
-		<div class="headLbl" ng-click="showDiv = !showDiv">{{fieldName}}</div>
+		<div class="headLbl" ng-click="showDiv = !showDiv">{{field.fieldName}}</div>
 		<div class="headClose" ng-click="removeMe()">X</div>
 	</div>
 	<div class="settingBody" ng-show="showDiv">
-		<div class='box'><label class="lbl">Field Type: label</label></div>
-		<div class='box'><label class="lbl">Field Title: </label> <input type="text" value="{{fieldName}}" ng-model="fieldName" class="inputTxt" maxlength="100" /></div>
+		<div class='box'><label class="lbl">Field Type: {{field.fieldType}}</label></div>
+		<div class='box'>
+			<label class="lbl">Field Title: </label> 
+			<input type="text" value="{{field.fieldName}}" ng-model="field.fieldName" class="inputTxt" maxlength="100" />
+		</div>
 	</div>
 </div>

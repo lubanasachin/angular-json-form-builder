@@ -1,6 +1,8 @@
 <div class="settingBox">
     <div class="settingHeader">
-        <div class="headLbl" ng-click="showDiv = !showDiv">{{field.fieldName}} <span class="required" ng-show="field.isRequired">*</span></div>
+        <div class="headLbl" ng-click="showDiv = !showDiv">{{field.fieldName}} - {{field.fieldType}} 
+			<span class="required" ng-show="field.isRequired">*</span>
+		</div>
         <div class="headClose" ng-click="removeMe()">X</div>
     </div>
     <div class="settingBody" ng-show="showDiv">

@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Akkroo- Process Manager</title>
-	<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+	<!--<script src="//code.angularjs.org/snapshot/angular.min.js"></script>-->
+	<script src="js/angular.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -11,22 +12,30 @@
 	<div ng-controller="myProcessCtrl" class="appContainer">
 
 		<div class="componentContainer">
-			<div class="component" ng-click="addComponent(1)">Textfield</div>
-			<div class="component" ng-click="addComponent(2)">E-mail</div>
-			<div class="component" ng-click="addComponent(3)">Radio buttons</div>
-			<div class="component" ng-click="addComponent(4)">Checkbox</div>
-			<div class="component" ng-click="addComponent(5)">Label</div>
-			<div class="component" ng-click="addComponent(6)">Button</div>
+			<div class="component" ng-click="addComponent('image')">Branding</div>
+			<div class="component" ng-click="addComponent('alist')">Attendees List</div>
+			<div class="component" ng-click="addComponent('text')">Textfield</div>
+			<div class="component" ng-click="addComponent('email')">E-mail</div>
+			<div class="component" ng-click="addComponent('radio')">Radio buttons</div>
+			<div class="component" ng-click="addComponent('checkbox')">Checkbox</div>
+			<div class="component" ng-click="addComponent('label')">Label</div>
+			<div class="component" ng-click="addComponent('button')">Button</div>
+			<div class="component" ng-click="addComponent('thankyou')">Thankyou page</div>
 		</div>
 
 		<div class="paintContainer">
 			<div class="settingContainer" id="settingArea"></div>
-			<div class="previewContainer" id="previewArea"></div>
-			<div class="jsonContainer" id="jsonArea"></div>
+			<div class="previewContainer" id="previewArea" ng-show='formView'></div>
+			<div class="jsonContainer" id="jsonArea" ng-show='jsonView'></div>
 		</div>
 
 		<div class="actionContainer">
-			<button class='inputButton' ng-click='saveForm()'>Save</button>&nbsp;<button class='inputButton' ng-click='resetForm()'>Reset</button>
+			<button class='inputButton' ng-click='saveMore()'>Save & Next</button>
+			<button class='inputButton' ng-click='previousForm()' ng-show='previousBtn'>Back</button>
+			<button class='inputButton' ng-click='saveForm()'>Finish</button>
+			&nbsp;<button class='inputButton' ng-click='viewForm()' ng-show='!formView'>View Form</button>
+			&nbsp;<button class='inputButton' ng-click='viewJson()' ng-show='!jsonView'>View JSON</button>
+			&nbsp;<button class='inputButton' ng-click='resetForm()'>Reset</button>
 		</div>
 
 	</div>
